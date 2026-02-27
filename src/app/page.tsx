@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { AppConfig, UserSession, showConnect, openContractCall } from "@stacks/connect";
-import { StacksTestnet } from "@stacks/network";
+import { StacksMainnet } from "@stacks/network";
 import {
   callReadOnlyFunction,
   cvToJSON,
@@ -11,12 +11,12 @@ import {
   FungibleConditionCode,
 } from "@stacks/transactions";
 
-const CONTRACT_ADDRESS = "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM";
+const CONTRACT_ADDRESS = "SP3E0DQAHTXJHH5YT9TZCSBW013YXZB25QFDVXXWY";
 const CONTRACT_NAME = "nft-mint";
 
 const appConfig = new AppConfig(["store_write", "publish_data"]);
 const userSession = new UserSession({ appConfig });
-const network = new StacksTestnet();
+const network = new StacksMainnet();
 
 export default function Home() {
   const [isConnected, setIsConnected] = useState(false);
