@@ -1,5 +1,5 @@
 {
-  "name": "stacks-nft-mint",
+  "name": "@stacksnpmv/stacks-nft-mint",
   "version": "1.0.0",
   "private": true,
   "scripts": {
